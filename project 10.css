@@ -131,6 +131,7 @@ ul {
 }
 .header .main-nav {
   display: flex;
+  margin: 0 auto;
 }
 .header .main-nav > li > a {
   display: flex;
@@ -804,6 +805,7 @@ ul {
   padding-bottom: var(--main-padding-bottom);
   position: relative;
   background-color: var(--section-background);
+  overflow: hidden;
 }
 .work-steps .container {
   display: flex;
@@ -1216,6 +1218,11 @@ ul {
   position: relative;
   max-width: 500px;
 }
+@media (max-width: 443px) {
+  .stats h2 {
+    font-size: 32px;
+  }
+}
 .stats .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -1317,7 +1324,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
 }
 .discount .form .input {
   display: block;
